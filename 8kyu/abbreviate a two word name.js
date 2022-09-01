@@ -7,6 +7,6 @@
 function abbrevName(name){
     // split  between space
     name = name.split(" ")
-    let initials = (name[0].slice(0,1) + "." + name[1].slice(0,1));
+    let initials = (name[0].slice(0,1) + "." + name[1].slice(0,1)).toUpperCase();
     return initials;
   }
