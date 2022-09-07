@@ -16,5 +16,5 @@
 // Output: "even"
 
 function oddOrEven(array) {
-    return (array.length > 0 ? array.reduce((a,b) => a + b) % 2 == 0 ? 'even' : 'odd' : 'even');
+    return (array.reduce((a,b) => a + b, 0) % 2 == 0 ? 'even' : 'odd');
   }
