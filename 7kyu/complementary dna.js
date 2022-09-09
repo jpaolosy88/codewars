@@ -27,3 +27,16 @@ function DNAStrand(dna){
     })
     return convertedDNA.join('');
   }
+
+  function DNAStrand(dna){
+    return dna.replace(/./g, function(x) {
+      return DNAStrand.pairs[x];
+    })
+  }
+  
+  DNAStrand.pairs = {
+    A: 'T',
+    T: 'A',
+    C: 'G',
+    G: 'C',
+  }
