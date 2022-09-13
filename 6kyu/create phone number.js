@@ -12,3 +12,11 @@ function createPhoneNumber(numbers){
     numbers = numbers.toString().split(',').join('');
     return `(${numbers.slice(0,3)}) ${numbers.slice(3,6)}-${numbers.slice(6,10)}`
   }
+
+  function createPhoneNumber(numbers){
+    let phoneNumberFormatted = '(xxx) xxx-xxxx';
+      for (let i = 0; i < numbers.length; i++) {
+        phoneNumberFormatted = phoneNumberFormatted.replace('x', numbers[i]);
+      }
+    return phoneNumberFormatted;
+  }
