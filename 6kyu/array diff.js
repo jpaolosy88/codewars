@@ -9,3 +9,11 @@
 
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
+function arrayDiff(a, b) {
+    b.forEach(x => {
+      while (a.some(element => element == x)) {
+          a.splice(a.indexOf(x),1,);
+          } 
+    });
+    return a;
+  }
