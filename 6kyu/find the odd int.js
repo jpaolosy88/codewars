@@ -21,3 +21,7 @@ function findOdd(arr) {
     }
     return answer;
   }
+
+  function findOdd(arr) {
+    return arr.reduce((a,b) => a ^ b);
+  }
