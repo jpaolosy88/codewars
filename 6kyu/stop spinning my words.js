@@ -9,5 +9,5 @@
 // spinWords( "This is another test" )=> returns "This is rehtona test"
 
 function spinWords(string){
-    return (string.split(' ')).map(word => word.length > 4 ? word.split('').reverse().join('') : word = word).join(' ');
+    return (string.split(' ')).map(word => word.length > 4 ? word.split('').reverse().join('') : word).join(' ');
   }
