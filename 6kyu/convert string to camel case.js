@@ -24,5 +24,8 @@ function toCamelCase(str){
     }
   }
   
-  
-  
+// refactored - used a match function on replace method
+
+function toCamelCase(str){
+    return str.replace(/[-_]\w/g, match => match.charAt(1).toUpperCase());
+  }
