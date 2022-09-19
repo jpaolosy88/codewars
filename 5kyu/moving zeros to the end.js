@@ -18,3 +18,9 @@ function moveZeros(arr) {
       }
     return arr;
   }
+
+// refactored - using chained array filter and concat method
+
+function moveZeros(arr) {
+    return arr.filter(x => x !== 0).concat(arr.filter(x => x ===0))
+  }
